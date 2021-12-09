@@ -9,35 +9,15 @@ const settings = {
   },
   "packages": [
     {
-      "name": "@frontity/mars-theme",
+      "name": 'sample-theme',
       "state": {
         "theme": {
-          "menu": [
-            [
-              "Home",
-              "/"
-            ],
-            [
-              "Nature",
-              "/category/nature/"
-            ],
-            [
-              "Travel",
-              "/category/travel/"
-            ],
-            [
-              "Japan",
-              "/tag/japan/"
-            ],
-            [
-              "About Us",
-              "/about-us/"
-            ]
-          ],
-          "featured": {
-            "showOnList": false,
-            "showOnPost": false
-          }
+          "menu" : [
+            ["Home", "/"],
+            ["Kwik", "/test-generated-home-page/"],
+            ["Sample Page", "/sample-page/"],
+            ["About Us", "/about-us/"],
+          ]
         }
       }
     },
@@ -45,7 +25,15 @@ const settings = {
       "name": "@frontity/wp-source",
       "state": {
         "source": {
-          "url": "https://test.frontity.org"
+          // "url": "https://test.frontity.org",
+          "url": "https://tlcgraduatecredits.com/kwik/",
+          "postTypes": [
+            {
+              type: "destinations",
+              endpoint: "destinations",
+              archive: "/destinations"
+            }
+          ]
         }
       }
     },
